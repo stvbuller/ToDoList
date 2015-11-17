@@ -31,7 +31,8 @@ function deleteItem () {
   //this.parentNode.parentNode.remove()
 }
 
-//function addRow() {
+//function addItem () {
+  //create a var of the unordered list and append to it?
   //this.parentNode.parentNode  insert or add
 //}
 
