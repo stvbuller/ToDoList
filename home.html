@@ -6,7 +6,7 @@
 </head>
 <body>
  <div class="container">
-  </div class="row">
+  </div class="page-header">
     <div class="col-md-1"></div>
     <div class="col-md-5"><h2>Items To Do</h2></div>
     <div class="col-md-1"></div>
@@ -16,22 +16,35 @@
     <div class="col-md-1"></div>
     <div class="col-md-5">
       <ul class="list-group">
-        <li class="list-item-group">Make Breakfast
+        <li class="list-item-group">
           <button type="button" class="btn btn-danger">Delete</button>
-          <input type="checkbox" class="itemcheckbox">
+          Make Breakfast
+          <input type="checkbox" class="itemcheckbox pull-right">
         </li>
-        <li class="list-item-group">Have lunch
+        <li class="list-item-group">
             <button type="button" class="btn btn-danger">Delete</button>
-            <input type="checkbox" class="itemcheckbox">
+            Have Lunch
+            <input type="checkbox" class="itemcheckbox pull-right">
         </li>
-        <li class="list-item-group">Do dinner
+        <li class="list-item-group">
           <button type="button" class="btn btn-danger">Delete</button>
-          <input type="checkbox" class="itemcheckbox">
+          Do Dinner
+          <input type="checkbox" class="itemcheckbox pull-right">
         </li>
       </ul>  
     </div>  
+
   <div class="col-md-1"></div>
-  <div class="col-md-5">New Items</div>
+  <div class="col-md-5">
+    <form role="form">
+      <div class="form-group">
+        <label for="newItem">Add the item</label>
+        <input type="text" class="form-control" id="newItem">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">Add</button>
+      </div>
+    </div>
 </div>
  
 
