@@ -21,14 +21,12 @@ function checkedOff () {
   //when the checkbox is checked the innerHTML
   //is struckthrough if the innerHTML is
   //already struck through undo the strikethrough
+  this.parentNode.innerHTML = "Item changed!";
 }
 
+//deletes the list item
 function deleteItem () {
-  alert("This was deleted");
-  //the list item is deleted when
-  //the delete button is clicked
-  //function removeRow()
-  //this.parentNode.parentNode.remove()
+  this.parentNode.remove()
 }
 
 //function addItem () {
