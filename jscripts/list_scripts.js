@@ -22,7 +22,7 @@ function checkedOff () {
   //already struck through undo the strikethrough
   //text-decoration: line-through;
   //text-decoration: none|underline|overline|line-through|initial|inherit;
-  this.parentNode.innerHTML = "Item changed!";
+  this.parentNode.innerHTML = "Item changed!"; 
 }
 
 //deletes the list item
