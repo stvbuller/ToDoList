@@ -21,6 +21,8 @@ function checkedOff () {
   //when the checkbox is checked the innerHTML
   //is struckthrough if the innerHTML is
   //already struck through undo the strikethrough
+  //text-decoration: line-through;
+  //text-decoration: none|underline|overline|line-through|initial|inherit;
   this.parentNode.innerHTML = "Item changed!";
 }
 
