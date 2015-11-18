@@ -1,5 +1,5 @@
 var deleteButton = document.getElementsByClassName("btn btn-danger")
-var checkButton = document.getElementsByClassName("checkbox")
+var checkButton = document.getElementsByClassName("listcheck")
 
 
 
