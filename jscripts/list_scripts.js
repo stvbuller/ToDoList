@@ -1,5 +1,5 @@
 var deleteButton = document.getElementsByClassName("btn btn-danger")
-var checkButton = document.getElementsByClassName("listcheck")
+var checkButton = document.getElementsByClassName("itemcheckbox")
 
 
 
@@ -17,7 +17,6 @@ for(var i = 0; i < checkButton.length; i++) {
 
 
 function checkedOff () {
-  alert("This was checked off");
   //when the checkbox is checked the innerHTML
   //is struckthrough if the innerHTML is
   //already struck through undo the strikethrough
