@@ -1,11 +1,11 @@
 $(document).ready(function(){
   
-$(".alert-danger").hide();
+$(".alert-warning").hide();
 
 $(".btn-default").on("click", function(preventSubmit){
   preventSubmit.preventDefault();
 
-  $(".alert-danger").hide();
+  $(".alert-warning").hide();
 
   var newText = $("#newInput").val().trim();
   console.log(newText);
@@ -19,7 +19,7 @@ $(".btn-default").on("click", function(preventSubmit){
     });
 
     if(isDup) {
-      $(".alert-danger").show();
+      $(".alert-warning").show();
       $("#newInput").val("").focus(); 
       return;
     }
@@ -52,8 +52,8 @@ $(".btn-default").on("click", function(preventSubmit){
   });
 
 
-  $("form").on("click", ".alert-danger", function() {
-    $(".alert-danger").hide();
+  $("form").on("click", ".alert-warning", function() {
+    $(".alert-warning").hide();
     $("#newInput").val("").focus();
   });
 
