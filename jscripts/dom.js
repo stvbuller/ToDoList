@@ -32,7 +32,7 @@ $(".btn-default").on("click", function(preventSubmit){
   var deleteTableData = $("<td>").append(buttonDelete);
 
   var markedOFF = ('<input type="checkbox" name="checkbox1" />');
-  var markedItem = $("<td>").append(markedOFF).addClass(".checkbox");
+  var markedItem = $("<td>").append(markedOFF);
 
 
   newTableRow.append(newTableData);
