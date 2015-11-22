@@ -31,7 +31,7 @@ $(".btn-default").on("click", function(preventSubmit){
   var buttonDelete = $("<button>").addClass("btn btn-danger").append("Remove");
   var deleteTableData = $("<td>").append(buttonDelete);
 
-  var markedOFF = ('<input type="checkbox" name="checkbox1" id="checkedbox"/>');
+  var markedOFF = ('<input type="checkbox" name="checkbox1" />');
   var markedItem = $("<td>").append(markedOFF).addClass(".checkbox");
 
 
@@ -41,7 +41,11 @@ $(".btn-default").on("click", function(preventSubmit){
 
   $("tbody").append(newTableRow);
   $("#newInput").val("").focus();
+
+  $("table").css("border", "2px solid lightblue");
+
   });
+
 
   $("table").on("click", ".btn-danger", function() {
     $(this).parent().remove();
@@ -54,6 +58,13 @@ $(".btn-default").on("click", function(preventSubmit){
   });
 
 
-
-
+  $("table").on("click", 'input[type="checkbox"]', function() {
+    if($(this).prop("checked") == true){
+                $(this).parent().parent().css("text-decoration", "line-through")
+            }
+            else if($(this).prop("checked") == false){
+                $(this).parent().parent().css("text-decoration", "none")
+            }
+  });
+  
 });
