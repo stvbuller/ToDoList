@@ -5,14 +5,16 @@ $(".alert-danger").hide();
 $(".btn-default").on("click", function(preventSubmit){
   preventSubmit.preventDefault();
 
-
   var newText = $("#newInput").val().trim();
   console.log(newText);
+
+
+/*
   var isDup = false;
 
-  /*
-  $("td.word-td").each(function () {
-    if ($(this).text() === newText) {
+
+  $("td.word-td").each(function () {    //check for duplicates
+    if ($(this).text().trim() === newText) {
       isDup = true;
       return;
     }
@@ -25,12 +27,12 @@ $(".btn-default").on("click", function(preventSubmit){
   */
 
   var newTableRow = $("<tr>");
-  var newTableData = $("<td>").append(newText);
-  var buttonDelete = $("<button>").addClass("btn btn-danger").addClass("word-td").append("Remove");
+  var newTableData = $("<td>").addClass("word-td").append(newText);
+  var buttonDelete = $("<button>").addClass("btn btn-danger").append("Remove");
   var deleteTableData = $("<td>").append(buttonDelete);
 
-  var markedOFF = $("<button>").addClass("btn btn-primary").append("Done");
-  var markedItem = $("<td>").append(markedOFF);
+  var markedOFF = ('<input type="checkbox" name="checkbox1" id="checkedbox"/>');
+  var markedItem = $("<td>").append(markedOFF).addClass(".checkbox");
 
 
   newTableRow.append(newTableData);
@@ -40,7 +42,6 @@ $(".btn-default").on("click", function(preventSubmit){
   $("tbody").append(newTableRow);
   $("#newInput").val("").focus;
 
-
   });
 
   $("table").on("click", ".btn-danger", function() {
@@ -49,14 +50,6 @@ $(".btn-default").on("click", function(preventSubmit){
   });
 
 
-  $("table").on("click", ".btn-primary", function() {
-    alert("This is done");
-  });
-
-/*  
-  //if the checkbox is clicked (.checkbox) the text should
-  //be struckthrough
-*/
 
 
 });
