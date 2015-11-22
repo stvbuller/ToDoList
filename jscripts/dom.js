@@ -8,7 +8,6 @@ $(".btn-default").on("click", function(preventSubmit){
   $(".alert-warning").hide();
 
   var newText = $("#newInput").val().trim();
-  console.log(newText);
 
   var isDup = false;
     $("td.checkForDup").each(function() {
