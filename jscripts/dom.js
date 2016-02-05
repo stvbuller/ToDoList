@@ -22,8 +22,6 @@ $(".btn-default").on("click", function(preventSubmit){
       $("#newInput").val("").focus(); 
       return;
     }
-  
-
 
   var newTableRow = $("<tr>");
   var newTableData = $("<td>").addClass("checkForDup").append(newText);
@@ -33,14 +31,12 @@ $(".btn-default").on("click", function(preventSubmit){
   var markedOFF = ('<input type="checkbox" name="checkbox1" />');
   var markedItem = $("<td>").append(markedOFF);
 
-
   newTableRow.append(newTableData);
   newTableRow.append(buttonDelete);
   newTableRow.append(markedItem);
 
   $("tbody").append(newTableRow);
   $("#newInput").val("").focus();
-
   $("table").css("border", "2px solid lightblue");
 
   });
@@ -59,11 +55,10 @@ $(".btn-default").on("click", function(preventSubmit){
 
   $("table").on("click", 'input[type="checkbox"]', function() {
     if($(this).prop("checked") == true){
-                $(this).parent().parent().css("text-decoration", "line-through")
-            }
-            else if($(this).prop("checked") == false){
-                $(this).parent().parent().css("text-decoration", "none")
-            }
+      $(this).parent().parent().css("text-decoration", "line-through")
+    }
+    else if($(this).prop("checked") == false){
+      $(this).parent().parent().css("text-decoration", "none")
+    }
   });
-  
 });
